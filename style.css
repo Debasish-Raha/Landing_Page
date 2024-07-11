@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    overflow-x: hidden;
+}
+.ul {
+    list-style: none;
+}
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+}
+.navbar .logo {
+    font-size: 2em; /* Increase logo font size */
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+.nav-links li {
+    margin: 0 30px;
+}
+.nav-links a {
+    font-size: 1.2em; /* Increase nav link font size */
+    color: rgb(248, 236, 6); /* Change link color to black */
+    text-decoration: none; /* Remove underline from links */
+}
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://images.squarespace-cdn.com/content/v1/5893534986e6c00851e56dbb/1491927893390-6R70GM6G9IT5A2S77CHF/image-asset.jpeg);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.header-content {
+    margin-bottom: 150px;
+    color: rgba(255, 255, 255, 0.988);
+    text-align: center;
+}
+.header-content h2 {
+    font-size: 4vmin;
+}
+.line {
+    width: 150px;
+    height: 4px;
+    background: rgba(241, 237, 237, 0.89);
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.header-content h1 {
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.ctn {
+    padding: 8px 15px;
+    background: blue;
+    border-radius: 30px;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.2em; /* Increase font size */
+}
+.ctn-your-news {
+    padding: 5px 10px;
+    background: rgb(239, 44, 44);
+    border-radius: 15px;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.2em; /* Increase font size */
+}
+section {
+    width: 80%;
+    margin: 80px auto;
+}
+.title {
+    text-align: center;
+    font-size: 5vmin;
+    color: blue;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+}
+.events .row {
+    margin-top: 50px;
+}
+h4 {
+    font-size: 3vmin;
+    color: brown;
+    margin: 20px auto;
+}
+p {
+    color: rgb(0, 0, 0); /* Ensure the text color is not the same as the background */
+    padding: 0px 40px;
+    font-size: 2.2em; /* Increase the font size for better visibility */
+    margin-top: 20px;
+}
+.events .ctn {
+    margin-top: 30px;
+    font-size: 1.2em; /* Increase font size */
+}
+.tours .row .col {
+    width: 50%;
+}
+.tours .img-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the images */
+}
+.img-gallery img {
+    width: calc(50% - 20px); /* 50% width minus the margin */
+    margin: 10px;
+    box-sizing: border-box;
+    border: 2px solid black; /* Add black border */
+}
+.tours .row .col h1 {
+    font-size: 5vmin; /* Increase the size of the Gallery text */
+}
+.footer {
+    width: 100%;
+    min-height: 200px;
+    padding: 20px 80px;
+    margin: 0;
+    background: rebeccapurple;
+    text-align: center;
+}
+.footer p {
+    color: whitesmoke;
+    margin: 20px auto;
+}
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+    }
+    .nav-links li {
+        margin: 10px 0;
+    }
+    header {
+        height: 60vh;
+    }
+    .header-content {
+        margin-bottom: 50px;
+    }
+    .header-content h1 {
+        font-size: 6vmin;
+    }
+    .header-content h2 {
+        font-size: 3vmin;
+    }
+    .header-content .ctn, .header-content .ctn-your-news {
+        font-size: 1em;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .row .col {
+        width: 90%;
+        margin: 20px 0;
+    }
+    .img-gallery img {
+        width: 80%;
+        margin: 5px 0;
+    }
+    .tours .row .col h1 {
+        font-size: 4vmin;
+    }
+    .tours .row .col p {
+        font-size: 1.5em;
+    }
+    .footer p {
+        font-size: 1.5em;
+    }
+}
